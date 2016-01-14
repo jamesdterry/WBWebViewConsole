@@ -5,6 +5,6 @@ DEPENDENCIES:
   - NSDictionary+Accessors (~> 1.0)
 
 SPEC CHECKSUMS:
-  NSDictionary+Accessors: 7bb473f1258ca37aef786c8d4f70f7880d2e9887
+  NSDictionary+Accessors: 5c453c028da416525428c938602c7c96704a9bbc
 
-COCOAPODS: 0.35.0
+COCOAPODS: 0.39.0

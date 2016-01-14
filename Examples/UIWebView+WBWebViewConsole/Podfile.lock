@@ -12,12 +12,12 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   WBWebViewConsole:
-    :path: ../..
+    :path: "../.."
 
 SPEC CHECKSUMS:
-  JSONKit-NoWarning: fc8d6dd8ec65e303867d1bd274632fc60a4a8ab9
-  NSDictionary+Accessors: 7bb473f1258ca37aef786c8d4f70f7880d2e9887
-  UIView+Positioning: a6265459fffba45e86d321aff09d4a0d92e5df06
-  WBWebViewConsole: 40ee333bf04d75fa47d86f4faf1c1ce0ec387bfb
+  JSONKit-NoWarning: 3d27e6f9e6846ecf741e8c64dcadd7d5aa7193cb
+  NSDictionary+Accessors: 5c453c028da416525428c938602c7c96704a9bbc
+  UIView+Positioning: e93fe9e3186d1ed7d60e344aa12787911e902056
+  WBWebViewConsole: 7afef8da3930674560723769afcfa56b8ae8e1eb
 
-COCOAPODS: 0.35.0
+COCOAPODS: 0.39.0
