@@ -26,7 +26,6 @@
     } _flags;
 }
 
-@property (nonatomic, strong) WBWebViewConsole * console;
 @property (nonatomic, strong) UITableView * tableView;
 @property (nonatomic, strong) WBWebViewConsoleInputView * inputView;
 
@@ -111,6 +110,8 @@
         _console = console;
         
         [self registerNotificationsForCurrentConsole];
+        
+        [self.inputView setConsole:self.console];
     }
 }
 
