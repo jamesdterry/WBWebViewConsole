@@ -50,6 +50,8 @@
 {
     [super viewDidLoad];
     
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    
     self.navigationItem.title = NSLocalizedString(@"Debug Console", nil);
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardFrameDidChangeNotification:) name:WBKeyboardObserverFrameDidUpdateNotification object:nil];
