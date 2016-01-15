@@ -57,7 +57,7 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardFrameDidChangeNotification:) name:WBKeyboardObserverFrameDidUpdateNotification object:nil];
     
     // Leave room for status bar
-    CGFloat y = self.topLayoutGuide.length;
+    CGFloat y = 20;
     CGRect tableFrameRect = CGRectMake(0, y, self.view.bounds.size.height-y, self.view.bounds.size.width);
     
     self.tableView = [[UITableView alloc] initWithFrame:tableFrameRect];
@@ -148,7 +148,7 @@
     }
     
     self.inputView.frame = CGRectMake(0, self.view.wbtHeight - inputViewHeight - keyboardHeight, self.view.wbtWidth, inputViewHeight);
-    self.tableView.frame = CGRectMake(0, 0, self.view.wbtWidth, self.view.wbtHeight - inputViewHeight - keyboardHeight);
+    self.tableView.frame = CGRectMake(0, 20, self.view.wbtWidth, self.view.wbtHeight - 20 - inputViewHeight - keyboardHeight);
     
     if (animated)
     {
@@ -276,7 +276,7 @@
     BOOL scrollToBottom = self.tableView.wbt_isScrolledToBottom;
     
     [self.tableView reloadData];
-
+    
     if (scrollToBottom)
     {
         [self.tableView wbt_scrollToBottomAnimated:NO];
