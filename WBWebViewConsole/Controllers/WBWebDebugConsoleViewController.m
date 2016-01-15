@@ -56,7 +56,11 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardFrameDidChangeNotification:) name:WBKeyboardObserverFrameDidUpdateNotification object:nil];
     
-    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
+    // Leave room for status bar
+    CGFloat y = self.topLayoutGuide.length;
+    CGRect tableFrameRect = CGRectMake(0, y, self.view.bounds.size.height-y, self.view.bounds.size.width);
+    
+    self.tableView = [[UITableView alloc] initWithFrame:tableFrameRect];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
